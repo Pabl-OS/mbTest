@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary:#1C8C90;
+    --secondary:#1EBA88;
+    --base:#F6F7F9;
+    --white:#FFFFFF;
+}
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: var(--base);
+    }
+.color-primary{
+    color: var(--primary);
+    }
+.color-secondary{
+    color: var(--secondary);
+    }
+.justify {
+    text-align: justify;
+}
+

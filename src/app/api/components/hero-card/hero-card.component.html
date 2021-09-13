@@ -1,0 +1,56 @@
+<div class="card col-md-12 mt-3 p-3">
+    <div class="row">
+         <!-- image -->
+        <div class="col-md-4 text-center">
+            <img [src]="hero.images.md" alt="">
+        </div>
+       <!-- name -->
+       <div class="col-md-8 mt-4">
+           <h1  class="text-center color-primary">{{hero.name}}</h1> 
+            <ul class="text-left">
+             <li>Nombre Completo :  <small>{{hero.biography.fullName }}</small> </li>
+             <li>Alter Egos :  <small>{{hero.biography.alterEgos }}</small> </li>
+             <li>Alias :  <small>  <pre>{{hero.biography.aliases  }}</pre> </small> </li>
+             <li>Lugar de Nacimiento :  <small>{{hero.biography.placeOfBirth}}</small> </li>
+             <li>Primera Aparicion :  <small>{{hero.biography.firstAppearance}}</small> </li>
+             <li>Editora :  <small>{{hero.biography.publisher}}</small> </li>
+             <li>Alineación :  <small>{{hero.biography.alignment}}</small> </li>
+            </ul>   
+
+            <div class="row">
+             <!-- powerstats -->
+                <div class="col-6">
+                   <h5 class="text-center color-secondary" >Powerstats</h5>
+                   <ul>
+                       <li>Inteligencia : <small>{{hero.powerstats.intelligence }}</small></li> 
+                       <li>Fuerza : <small>{{hero.powerstats.strength }}</small></li> 
+                       <li>Velocidad : <small>{{hero.powerstats.speed  }}</small></li> 
+                       <li>Durabilidad : <small>{{hero.powerstats.durability }}</small></li> 
+                       <li>Poder : <small>{{hero.powerstats.power }}</small></li> 
+                       <li>Combate : <small>{{hero.powerstats.combat  }}</small></li> 
+                   </ul>   
+                </div>
+                <!-- appearance -->
+                <div class="col-6">
+                    <h5 class="text-center color-secondary">Apariencia</h5>
+                    <ul> 
+                        <li>Raza : <small>{{ hero.appearance.race }}</small> </li>       
+                        <li>Altura : <small>{{ hero.appearance.height }}</small> </li>     
+                        <li>Ancho : <small>{{ hero.appearance.weight }}</small> </li>   
+                        <li>Color Ojo : <small>{{ hero.appearance.eyeColor }}</small> </li>   
+                        <li>Color Cabello : <small>{{ hero.appearance.hairColor }}</small> </li> 
+                    </ul> 
+                </div>
+            </div>
+        </div>
+            <hr class="mt-2">
+            <!-- connections -->
+            <div class="col-12">
+               <h5 class="text-center color-secondary ">Conexiones</h5>
+               <ul> 
+                   <li>Afiliación Grupal : <small>{{ hero.connections.groupAffiliation }}</small> </li>       
+                   <li>Parientes : <small>{{ hero.connections.relatives }}</small> </li>     
+               </ul> 
+            </div>
+   </div>
+</div>

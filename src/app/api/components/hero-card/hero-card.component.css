@@ -1,0 +1,21 @@
+img {
+    border-radius: 25px;
+    }
+li {
+    list-style: none;
+    font-weight: 600;
+    }
+small {
+    font-weight: 300;
+    }
+hr {
+    height: 5px;
+    background-color: var(--primary);
+    }
+.card {
+    border: none;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 1px 22px 7px rgba(207,205,207,1);
+    -moz-box-shadow: 2px 1px 22px 7px rgba(207,205,207,1);
+    box-shadow: 2px 1px 22px 7px rgba(207,205,207,1);
+    }

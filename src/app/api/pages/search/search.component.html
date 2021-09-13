@@ -1,0 +1,15 @@
+
+
+      <h1 class="mt-4">BUSCAR SUPERHERÓE </h1>
+      <div class="row">
+          <div class="input-group col-8 mt-4">
+            <input type="search" [(ngModel)]="nameHero" class="form-control rounded" 
+                   placeholder="Ingresa el nombre del superheróe o heroe" aria-label="Search"
+                   aria-describedby="search hero by name" />
+            <button type="button" (click)="search()" class="btn btn-primary">Buscar</button>
+          </div>
+      </div>
+      
+      <h4 *ngIf="loading" class="text-center mt-5 color-secondary">Cargando...</h4>
+      <app-hero-card *ngIf="hero"  [hero]="hero" ></app-hero-card>
+

@@ -1,0 +1,7 @@
+    
+    <h1 class="mt-3 mb-3 color-primary">{{ title | uppercase }} RANDOM</h1>
+    <h4 *ngIf="loading" class="text-center mt-5 color-secondary">Cargando...</h4>
+    
+    <div class="row"   *ngFor="let randomHeroe of randomHeroes" >
+        <app-hero-card  *ngIf="!loading" [hero]="randomHeroe" ></app-hero-card>
+    </div>
